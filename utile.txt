@@ -10,3 +10,9 @@ openssl version -a
 #get python version
 python --version
 python3 --version
+
+#pretty print JSON to console with sorting
+python3 test.py | python -mjson.tool
+
+#or same with Yajl without sorting
+python3 test.py | json_reformat
