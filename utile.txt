@@ -16,3 +16,6 @@ python3 test.py | python -mjson.tool
 
 #or same with Yajl without sorting
 python3 test.py | json_reformat
+
+#debug mode
+python -m pdb myscript.py
