@@ -25,20 +25,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.49440297">
       <split-first>
         <leaf>
-          <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-                  <caret line="25" column="72" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="72" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ApiWrapper.py" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="ApiWrapper.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="825">
+                <state vertical-scroll-proportion="0.4620853" vertical-offset="75" max-vertical-offset="765">
                   <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
                   <folding>
                     <marker date="1412598133000" expanded="true" signature="162:316" placeholder="..." />
@@ -47,10 +37,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="utile.txt" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="utile.txt" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/utile.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7241379" vertical-offset="0" max-vertical-offset="435">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
                   <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
                   <folding />
                 </state>
@@ -71,7 +61,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ApiWrapper.py" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ApiWrapper.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.46682465" vertical-offset="403" max-vertical-offset="825">
@@ -356,10 +346,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="22" width="1260" height="760" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14920636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -397,20 +387,11 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="510">
-          <caret line="25" column="72" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="615">
           <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
             <marker date="1412598133000" expanded="true" signature="162:316" placeholder="..." />
           </folding>
         </state>
@@ -440,22 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="25" column="72" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7241379" vertical-offset="0" max-vertical-offset="435">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/botHub.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
@@ -474,12 +439,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46682465" vertical-offset="403" max-vertical-offset="825">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.4620853" vertical-offset="75" max-vertical-offset="765">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
             <marker date="1412598133000" expanded="true" signature="162:316" placeholder="..." />
           </folding>
         </state>
