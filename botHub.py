@@ -2,4 +2,4 @@ from ApiWrapper import ApiWrapper
 __author__ = 'Tual'
 
 wrapper = ApiWrapper("gurrlzonbikes", "starcraft666")
-wrapper.get_hot_repos()
+wrapper.forkRepo()
