@@ -25,22 +25,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.49440297">
       <split-first>
         <leaf>
-          <file leaf-file-name="ApiWrapper.py" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="ApiWrapper.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="765">
-                  <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+                <state vertical-scroll-proportion="0.7867299" vertical-offset="613" max-vertical-offset="1035">
+                  <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
                   <folding>
-                    <marker date="1412598133000" expanded="true" signature="162:316" placeholder="..." />
+                    <element signature="e#0#15#0" expanded="true" />
+                    <marker date="1412602072000" expanded="true" signature="162:316" placeholder="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.15113351" vertical-offset="0" max-vertical-offset="397">
+                <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="195">
                   <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
                   <folding />
                 </state>
@@ -71,19 +72,6 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ApiWrapper.py" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.46682465" vertical-offset="403" max-vertical-offset="825">
-                  <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                    <marker date="1412598133000" expanded="true" signature="162:316" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="GitWrapper.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/GitWrapper.py">
               <provider selected="true" editor-type-id="text-editor">
@@ -96,12 +84,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="botHub.py" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="botHub.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/botHub.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-                  <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-                  <folding />
+                <state vertical-scroll-proportion="0.4827586" vertical-offset="0" max-vertical-offset="435">
+                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#33#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -125,9 +115,9 @@
         <option value="$PROJECT_DIR$/apiWrapper.py" />
         <option value="$PROJECT_DIR$/utile.txt" />
         <option value="$PROJECT_DIR$/GitWrapper.py" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/botHub.py" />
         <option value="$PROJECT_DIR$/ApiWrapper.py" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -403,7 +393,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="615">
           <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
-            <marker date="1412598133000" expanded="true" signature="162:316" placeholder="..." />
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1412602072000" expanded="true" signature="162:316" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -432,11 +423,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/botHub.py">
+    <entry file="file://$PROJECT_DIR$/utile.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="195">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7867299" vertical-offset="613" max-vertical-offset="1035">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1412602072000" expanded="true" signature="162:316" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -450,29 +460,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utile.txt">
+    <entry file="file://$PROJECT_DIR$/botHub.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="765">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.4827586" vertical-offset="0" max-vertical-offset="435">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <marker date="1412598133000" expanded="true" signature="162:316" placeholder="..." />
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15113351" vertical-offset="0" max-vertical-offset="397">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>

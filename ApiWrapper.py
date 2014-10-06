@@ -42,9 +42,22 @@ class ApiWrapper:
 
 
 
-    def forkRepo(self):
+    def forkRepo(self, random_repo):
         pp = pprint.PrettyPrinter(indent=4)
-        random_repo = self.get_hot_repos()
         pp.pprint(random_repo['full_name'])
         resp = requests.post(random_repo['forks_url'], auth=self.auth)
         return resp.status_code
+
+    def checkDoubleRepo(self, my_reps, my_random_rep):
+        pp = pprint.PrettyPrinter(indent=4)
+        mylist = [l['full_name'].split("/")[1] for l in my_reps]
+        print(my_random_rep['full_name'].split("/")[1])
+        #pp.pprint(mylist)
+        """for l in my_reps:
+            if l['full_name'].split("/")[1] == my_random_rep['full_name'].split("/")[1]:
+                return "This repository already exists, trying to fork another one..."
+            else:
+                return "Repo forked, everything ok"""
+        if my_random_rep['full_name'].split("/")[1] in mylist:
+            return "This repository already exists, trying to fork another one..."
+            #print(l['full_name'].split("/")[1])
