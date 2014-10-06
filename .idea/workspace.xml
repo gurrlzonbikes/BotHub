@@ -25,14 +25,24 @@
     <splitter split-orientation="horizontal" split-proportion="0.49440297">
       <split-first>
         <leaf>
-          <file leaf-file-name="ApiWrapper.py" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ApiWrapper.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4620853" vertical-offset="75" max-vertical-offset="765">
+                <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="765">
                   <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
                   <folding>
                     <marker date="1412598133000" expanded="true" signature="162:316" placeholder="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.11335012" vertical-offset="0" max-vertical-offset="397">
+                  <caret line="3" column="87" selection-start-line="3" selection-start-column="87" selection-end-line="3" selection-end-column="87" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -117,6 +127,7 @@
         <option value="$PROJECT_DIR$/GitWrapper.py" />
         <option value="$PROJECT_DIR$/botHub.py" />
         <option value="$PROJECT_DIR$/ApiWrapper.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -449,11 +460,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4620853" vertical-offset="75" max-vertical-offset="765">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="765">
           <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <marker date="1412598133000" expanded="true" signature="162:316" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11335012" vertical-offset="0" max-vertical-offset="397">
+          <caret line="3" column="87" selection-start-line="3" selection-start-column="87" selection-end-line="3" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
