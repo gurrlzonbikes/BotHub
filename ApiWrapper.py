@@ -29,7 +29,7 @@ class ApiWrapper:
     def get_hot_repos(self):
         pp = pprint.PrettyPrinter(indent=4)
         uri = "/search/repositories"
-        hot_repos = requests.get(self.base_url+uri+"?q=games+in:description+language:javascript&sort=forks&order=desc", headers=self.headers)
+        hot_repos = requests.get(self.base_url+uri+"?q=games+in:description+language:javascript&sort=updated&order=asc", headers=self.headers)
         resp = hot_repos.json()
         rand = randrange(0,10)
         return resp['items'][rand]
