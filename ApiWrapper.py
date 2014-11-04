@@ -17,8 +17,11 @@ class ApiWrapper:
             'content-type': 'application/json',
             'Access-Control-Expose-Headers': 'ETag',
             'Accept': 'application/vnd.github.v3+json'
-
         }
+        test = self.listOwnRepos()
+        if test.status_code != 200:
+            raise TypeError("Error at login. Please check that you've entered your credentials correctly.")
+
 
     def create_repo(self, repoName):
         headers = {'content-type': 'application/json'}
@@ -38,7 +41,11 @@ class ApiWrapper:
         pp = pprint.PrettyPrinter(indent=4)
         uri = "/user/repos"
         my_repos = requests.get(self.base_url+uri, auth=self.auth)
-        return my_repos.json()
+        if my_repos.status_code !=200:
+            raise TypeError("There was a problem logging you in. Please check that you've entered your credentials properly.")
+        else:
+            return my_repos.json()
+
 
     def update_progress(self, progress):
         #pdb.set_trace()
@@ -52,8 +59,10 @@ class ApiWrapper:
         return resp.status_code
 
     def checkDoubleRepo(self, my_reps, my_random_rep):
+
         pp = pprint.PrettyPrinter(indent=4)
         list_rep_name = [l['full_name'].split("/")[1] for l in my_reps]
+        pdb.set_trace()
         if my_random_rep['full_name'].split("/")[1] in list_rep_name:
             return True
             #print(l['full_name'].split("/")[1])
