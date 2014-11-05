@@ -3,6 +3,8 @@ from getpass import getpass
 import pprint
 import pdb
 
+pp = pprint.PrettyPrinter(indent=4)
+
 __author__ = 'Tual'
 
 class MeBot:
@@ -11,12 +13,15 @@ class MeBot:
         credentials_user_name = input("Enter Github username: ")
         credentials_pwd = getpass("Enter Github password: ")
         #pdb.set_trace()
-        self.test(credentials_user_name, credentials_pwd)
-        self.fork_repo_safely(credentials_user_name, credentials_pwd)
+        github_wrapper = ApiWrapper(credentials_user_name, credentials_pwd)
+        resp = github_wrapper.authenticate()
+        pp.pprint(resp)
+        """self.test(credentials_user_name, credentials_pwd)"""
+        """self.fork_repo_safely(credentials_user_name, credentials_pwd)
         if credentials_user_name is None:
             self.credentials_user_name = input("Enter Github username: ")
         else:
-            self.credentials_user_name = credentials_user_name
+            self.credentials_user_name = credentials_user_name"""
 
 
 
