@@ -18,13 +18,22 @@ class ApiWrapper:
             'Access-Control-Expose-Headers': 'ETag',
             'Accept': 'application/vnd.github.v3+json'
         }
-        """self.list_own_repos()"""
+        log_me_in = self.authenticate()
+        if log_me_in.status_code != 201:
+            raise TypeError("There was a problem logging you in. Please check that you've entered your credentials properly.")
+        else:
+            #print(log_me_in)
+            self.headers["If-None-Match"] = log_me_in.headers["ETag"]
+            self.list_own_repos()
+            #pdb.set_trace()
 
     def authenticate(self):
-        params = json.dumps({"scopes" : "public_repo", "note":"something", "client_id" : "xxx", "client_secret":"xxx"})
-        resp = requests.post(self.base_url + '/authorizations', auth=self.auth, data=params)
-        pdb.set_trace()
-        return resp.json()
+        pp = pprint.PrettyPrinter(indent=4)
+        params = json.dumps({"scopes" : "public_repo", "note":"something", "client_id" : "b99ae3718827f2c7094f", "client_secret":"ec6bdb64c540b5c14aa5796fcbe47cec65848341"})
+        resp = requests.post(self.base_url + '/authorizations', auth=self.auth, headers= self.headers, data=params)
+        #pdb.set_trace()
+        self.headers["Authorization"] = "token " + resp.json()["token"]
+        return resp
 
     def create_repo(self, repoName):
         headers = {'content-type': 'application/json'}
@@ -36,20 +45,19 @@ class ApiWrapper:
         pp = pprint.PrettyPrinter(indent=4)
         uri = "/search/repositories"
         hot_repos = requests.get(self.base_url+uri+"?q=games+in:description+language:python&sort=updated&order=asc", headers=self.headers)
+        pdb.set_trace()
         resp = hot_repos.json()
-        #pdb.set_trace()
+        #pp.pprint(hot_repos.headers)
         rand = randrange(0,10)
-        pp.pprint(resp)
+        #pp.pprint(resp)
         return resp['items'][rand]
 
     def list_own_repos(self):
         pp = pprint.PrettyPrinter(indent=4)
         uri = "/user/repos"
-        my_repos = requests.get(self.base_url+uri, auth=self.auth)
-        if my_repos.status_code !=200:
-            raise TypeError("There was a problem logging you in. Please check that you've entered your credentials properly.")
-        else:
-            return my_repos.json()
+        my_repos = requests.get(self.base_url+uri, auth=self.auth, headers=self.headers)
+        #pdb.set_trace()
+        return my_repos.json()
 
 
     def update_progress(self, progress):
@@ -66,10 +74,8 @@ class ApiWrapper:
     def checkDoubleRepo(self, my_reps, my_random_rep):
         pp = pprint.PrettyPrinter(indent=4)
         list_rep_name = [l['full_name'].split("/")[1] for l in my_reps]
-        #pdb.set_trace()
         if my_random_rep['full_name'].split("/")[1] in list_rep_name:
             return True
-            #print(l['full_name'].split("/")[1])
         else:
             return False
 
