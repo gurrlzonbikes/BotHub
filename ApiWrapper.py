@@ -21,7 +21,7 @@ class ApiWrapper:
         """self.list_own_repos()"""
 
     def authenticate(self):
-        params = json.dumps({"scopes" : "public_repo", "note":"something", "client_id" : "b99ae3718827f2c7094f", "client_secret":"ec6bdb64c540b5c14aa5796fcbe47cec65848341"})
+        params = json.dumps({"scopes" : "public_repo", "note":"something", "client_id" : "xxx", "client_secret":"xxx"})
         resp = requests.post(self.base_url + '/authorizations', auth=self.auth, data=params)
         pdb.set_trace()
         return resp.json()
