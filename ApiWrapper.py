@@ -18,10 +18,7 @@ class ApiWrapper:
             'Access-Control-Expose-Headers': 'ETag',
             'Accept': 'application/vnd.github.v3+json'
         }
-        test = self.listOwnRepos()
-        if test.status_code != 200:
-            raise TypeError("Error at login. Please check that you've entered your credentials correctly.")
-
+        self.list_own_repos()
 
     def create_repo(self, repoName):
         headers = {'content-type': 'application/json'}
@@ -32,12 +29,14 @@ class ApiWrapper:
     def get_hot_repos(self):
         pp = pprint.PrettyPrinter(indent=4)
         uri = "/search/repositories"
-        hot_repos = requests.get(self.base_url+uri+"?q=games+in:description+language:javascript&sort=updated&order=asc", headers=self.headers)
+        hot_repos = requests.get(self.base_url+uri+"?q=games+in:description+language:python&sort=updated&order=asc", headers=self.headers)
         resp = hot_repos.json()
+        #pdb.set_trace()
         rand = randrange(0,10)
+        pp.pprint(resp)
         return resp['items'][rand]
 
-    def listOwnRepos(self):
+    def list_own_repos(self):
         pp = pprint.PrettyPrinter(indent=4)
         uri = "/user/repos"
         my_repos = requests.get(self.base_url+uri, auth=self.auth)
@@ -52,19 +51,29 @@ class ApiWrapper:
         print('\r[{0}] {1}%'.format('#'*int(progress/10), progress, end=''))
 
 
-    def forkRepo(self, random_repo):
+    def fork_repo(self, random_repo):
         pp = pprint.PrettyPrinter(indent=4)
         pp.pprint(random_repo['full_name'])
         resp = requests.post(random_repo['forks_url'], auth=self.auth)
         return resp.status_code
 
     def checkDoubleRepo(self, my_reps, my_random_rep):
-
         pp = pprint.PrettyPrinter(indent=4)
         list_rep_name = [l['full_name'].split("/")[1] for l in my_reps]
-        pdb.set_trace()
+        #pdb.set_trace()
         if my_random_rep['full_name'].split("/")[1] in list_rep_name:
             return True
             #print(l['full_name'].split("/")[1])
         else:
             return False
+
+    def checkRepoHasForks(self, repo):
+        if repo["forks"] > 1:
+            return True
+        else:
+            return False
+
+    def test(self):
+        pp = pprint.PrettyPrinter(indent=4)
+        resp = requests.get('https://api.github.com/user')
+        pp.pprint(resp.json())
