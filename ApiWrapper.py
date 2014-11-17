@@ -44,10 +44,10 @@ class ApiWrapper:
     def get_hot_repos(self):
         pp = pprint.PrettyPrinter(indent=4)
         uri = "/search/repositories"
-        hot_repos = requests.get(self.base_url+uri+"?q=games+in:description+language:python&sort=updated&order=asc", headers=self.headers)
-        pdb.set_trace()
+        hot_repos = requests.get(self.base_url+uri+"?q=games+in:description+language:python&sort=forks:>3<10&order=asc", headers=self.headers)
+        #pdb.set_trace()
         resp = hot_repos.json()
-        #pp.pprint(hot_repos.headers)
+        pp.pprint(hot_repos.json())
         rand = randrange(0,10)
         #pp.pprint(resp)
         return resp['items'][rand]
@@ -84,6 +84,9 @@ class ApiWrapper:
             return True
         else:
             return False
+
+    def clone_it(self, random_repo):
+        return random_repo['clone_url']
 
     def test(self):
         pp = pprint.PrettyPrinter(indent=4)

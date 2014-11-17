@@ -1,4 +1,5 @@
 from ApiWrapper import ApiWrapper
+from repoManagement import repoManagement
 from getpass import getpass
 import pprint
 import pdb
@@ -16,22 +17,22 @@ class MeBot:
 
     def fork_repo_safely(self, username, password):
         github_wrapper = ApiWrapper(username, password)
+        os_management = repoManagement()
         my_reps = github_wrapper.list_own_repos()
-        #pdb.set_trace()
         random_rep = github_wrapper.get_hot_repos()
+        #pdb.set_trace()
         print(random_rep['full_name'])
         if github_wrapper.checkDoubleRepo(my_reps, random_rep):
             print("Repository already exists")
-            self.fork_repo_safely(username, password)
-
-        elif github_wrapper.checkRepoHasForks(random_rep) == False:
-            print("Repo has under 1 fork, moving on...")
             self.fork_repo_safely(username, password)
 
         else:
             #pdb.set_trace()
             github_wrapper.fork_repo(random_rep)
             print(github_wrapper.update_progress(100))
+            clone_url = github_wrapper.clone_it(random_rep)
+            os_management.clone_repo(clone_url)
+
 
 
 
