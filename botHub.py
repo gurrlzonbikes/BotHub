@@ -1,7 +1,7 @@
 from ApiWrapper import ApiWrapper
 from repoManagement import repoManagement
 from getpass import getpass
-from dlistedScrapper import dlistedScrapper
+from dlistedScraper import dlistedScraper
 import pprint
 import pdb
 
@@ -12,8 +12,11 @@ __author__ = 'Tual'
 class MeBot:
 
     def __init__(self):
-        dlisted = dlistedScrapper()
-        dlisted.get_yesterday_archives()
+        dlisted = dlistedScraper()
+        yesterday_archive = dlisted.get_yesterday_archives()
+        post = dlisted.get_post(yesterday_archive)
+        #quotes = dlisted.get_post(random_article)
+        #dlisted.get_cdata_disqus(random_article)
         #credentials_user_name = input("Enter Github username: ")
         #credentials_pwd = getpass("Enter Github password: ")
         #self.fork_repo_safely(credentials_user_name, credentials_pwd)
