@@ -21,21 +21,27 @@ class repoManagement:
         cfiles = [os.path.join(root, filename)
           for root, dirnames, filenames in os.walk('/Users/Tual/PycharmProjects/'+folder_name.split("/")[1])
           for filename in filenames if filename.endswith('.py') and not re.match('^__init', filename)]
-        test = random.choice(cfiles)
         #pdb.set_trace()
         return random.choice(cfiles)
 
     def insert_random_in_file(self, file_to_modify):
-        file_name = open(file_to_modify, 'r+')
-        comment = self.get_comment_strings()
-        file_name.write(comment)
-        print(file_to_modify + " was just updated")
-        file_name.close()
+        with open(file_to_modify, 'r+') as infile:
+            data = infile.readlines()
+            test= list(enumerate([x for x in data if x.endswith('\n')]))
+            random_choice = random.choice(test)
+            comment = self.get_comment_strings()
+            data.insert(random_choice[0]+1, comment)
+            #pdb.set_trace()
+            infile.writelines(data)
+            print(file_to_modify + " was just updated at line "+str(random_choice[0]+1))
+            infile.close()
+
+
 
     def get_comment_strings(self):
         yesterday_archive = self.dlisted.get_yesterday_archives()
         article = self.dlisted.get_random_article(yesterday_archive)
         raw_post = self.dlisted.get_post(article)
         concat_post_strings = ' '.join(raw_post)
-        return '"""' + concat_post_strings + '"""'
+        return '"""' + concat_post_strings + '"""\n'
 
