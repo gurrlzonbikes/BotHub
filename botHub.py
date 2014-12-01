@@ -14,9 +14,9 @@ class MeBot:
     def __init__(self):
         dlisted = dlistedScraper()
         yesterday_archive = dlisted.get_yesterday_archives()
-        post = dlisted.get_post(yesterday_archive)
-        #quotes = dlisted.get_post(random_article)
-        #dlisted.get_cdata_disqus(random_article)
+        article = dlisted.get_random_article(yesterday_archive)
+        post = dlisted.get_post(article)
+        pdb.set_trace()
         #credentials_user_name = input("Enter Github username: ")
         #credentials_pwd = getpass("Enter Github password: ")
         #self.fork_repo_safely(credentials_user_name, credentials_pwd)
