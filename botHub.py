@@ -39,6 +39,7 @@ class MeBot:
             random_py = os_management.select_random_py_file(random_rep['full_name'])
             os_management.insert_random_in_file(random_py)
             os_management.get_comment_strings()
+            pdb.set_trace()
             return random_rep['full_name']
 
 

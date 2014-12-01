@@ -25,10 +25,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.53377736">
       <split-first>
         <leaf>
-          <file leaf-file-name="dlistedScraper.py" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="dlistedScraper.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dlistedScraper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6917808" vertical-offset="492" max-vertical-offset="930">
+                <state vertical-scroll-proportion="0.0" vertical-offset="492" max-vertical-offset="930">
                   <caret line="49" column="76" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="76" />
                   <folding>
                     <element signature="e#20#35#0" expanded="true" />
@@ -37,11 +37,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="botHub.py" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="botHub.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/botHub.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="870">
-                  <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+                <state vertical-scroll-proportion="-0.3580902" vertical-offset="225" max-vertical-offset="885">
+                  <caret line="6" column="25" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="25" />
                   <folding>
                     <element signature="e#0#33#0" expanded="true" />
                   </folding>
@@ -53,11 +53,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ApiWrapper.py" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="ApiWrapper.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="820" max-vertical-offset="1800">
-                  <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
+                <state vertical-scroll-proportion="0.397878" vertical-offset="750" max-vertical-offset="1800">
+                  <caret line="46" column="114" selection-start-line="46" selection-start-column="114" selection-end-line="46" selection-end-column="114" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -75,10 +75,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="repoManagement.py" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="repoManagement.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/repoManagement.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6232877" vertical-offset="477" max-vertical-offset="915">
+                <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="915">
                   <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
                   <folding>
                     <element signature="e#20#37#0" expanded="true" />
@@ -115,9 +115,9 @@
         <option value="$PROJECT_DIR$/dlistedScrapper.py" />
         <option value="$PROJECT_DIR$/../DisqusScraper/disqusScraper.py" />
         <option value="$PROJECT_DIR$/dlistedScraper.py" />
+        <option value="$PROJECT_DIR$/repoManagement.py" />
         <option value="$PROJECT_DIR$/botHub.py" />
         <option value="$PROJECT_DIR$/ApiWrapper.py" />
-        <option value="$PROJECT_DIR$/repoManagement.py" />
       </list>
     </option>
   </component>
@@ -356,7 +356,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33900708" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42553192" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14829822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -777,19 +777,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/botHub.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="870">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dlistedScraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6917808" vertical-offset="492" max-vertical-offset="930">
+        <state vertical-scroll-proportion="0.0" vertical-offset="492" max-vertical-offset="930">
           <caret line="49" column="76" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="76" />
           <folding>
             <element signature="e#20#35#0" expanded="true" />
@@ -797,22 +787,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
+    <entry file="file://$PROJECT_DIR$/repoManagement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="820" max-vertical-offset="1800">
-          <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="915">
+          <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#20#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repoManagement.py">
+    <entry file="file://$PROJECT_DIR$/botHub.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6232877" vertical-offset="477" max-vertical-offset="915">
-          <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
+        <state vertical-scroll-proportion="-0.3580902" vertical-offset="225" max-vertical-offset="885">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="25" />
           <folding>
-            <element signature="e#20#37#0" expanded="true" />
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiWrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.397878" vertical-offset="750" max-vertical-offset="1800">
+          <caret line="46" column="114" selection-start-line="46" selection-start-column="114" selection-end-line="46" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -44,10 +44,10 @@ class ApiWrapper:
     def get_hot_repos(self):
         pp = pprint.PrettyPrinter(indent=4)
         uri = "/search/repositories"
-        hot_repos = requests.get(self.base_url+uri+"?q=crawler+in:description+language:python&sort=forks:>3<10&order=asc", headers=self.headers)
+        hot_repos = requests.get(self.base_url+uri+"?q=crawler+in:description+language:python&sort=forks:>100<1000&order=asc", headers=self.headers)
         #pdb.set_trace()
         resp = hot_repos.json()
-        pp.pprint(hot_repos.json())
+        #pp.pprint(hot_repos.json())
         rand = randrange(0,10)
         #pp.pprint(resp)
         return resp['items'][rand]
