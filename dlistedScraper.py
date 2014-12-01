@@ -14,7 +14,6 @@ class dlistedScraper:
     def __init__(self):
         self.base_url = "http://dlisted.com/"
 
-
     def get_yesterday_archives(self):
         # Get a date object
         today = date.today()- timedelta(1)
@@ -33,22 +32,21 @@ class dlistedScraper:
         return soup
 
     def get_post(self, front_page):
-        [s.extract() for s in front_page('script')]
-        random_text= front_page.get_text()
-        sentence_list = self.clean_html(random_text)
+        sentence_list = self.clean_html(front_page)
         #pdb.set_trace()
         if not sentence_list:
             self.get_post(front_page)
         else:
             return sentence_list
 
-    def clean_html(self, random_text):
+    def clean_html(self, front_page):
+        [s.extract() for s in front_page('script')]
+        random_text= front_page.get_text()
         lines = [line.strip() for line in random_text.splitlines()]
-        # break multi-headlines into a line each
         no_blanks_list = list(filter(None, lines))
         #pdb.set_trace()
         result = random.sample(no_blanks_list, 15)
         #only get sentences longer than 100 char and not the "commenting rule" paragraph
-        return [x for x in result if len(x) > 90 and not re.match('^Our', x)]
+        return [x for x in result if len(x) > 60 and not re.match('^Our', x)]
 
 

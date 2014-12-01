@@ -1,7 +1,6 @@
 from ApiWrapper import ApiWrapper
 from repoManagement import repoManagement
 from getpass import getpass
-from dlistedScraper import dlistedScraper
 import pprint
 import pdb
 
@@ -12,12 +11,13 @@ __author__ = 'Tual'
 class MeBot:
 
     def __init__(self):
-        self.dlisted = dlistedScraper()
-        comments = self.get_comment_strings()
-        pdb.set_trace()
-        #credentials_user_name = input("Enter Github username: ")
-        #credentials_pwd = getpass("Enter Github password: ")
-        #self.fork_repo_safely(credentials_user_name, credentials_pwd)
+        #pdb.set_trace()
+        credentials_user_name = input("Enter Github username: ")
+        credentials_pwd = getpass("Enter Github password: ")
+        #pdb.set_trace()
+        repo_name = self.fork_repo_safely(credentials_user_name, credentials_pwd)
+
+
 
     def fork_repo_safely(self, username, password):
         github_wrapper = ApiWrapper(username, password)
@@ -36,11 +36,11 @@ class MeBot:
             print(github_wrapper.update_progress(100))
             clone_url = github_wrapper.clone_it(random_rep)
             os_management.clone_repo(clone_url)
+            random_py = os_management.select_random_py_file(random_rep['full_name'])
+            os_management.insert_random_in_file(random_py)
+            os_management.get_comment_strings()
+            return random_rep['full_name']
 
-    def get_comment_strings(self):
-        yesterday_archive = self.dlisted.get_yesterday_archives()
-        article = self.dlisted.get_random_article(yesterday_archive)
-        return self.dlisted.get_post(article)
 
 
 
