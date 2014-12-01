@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from datetime import date, timedelta
 import random
 import pdb
+import re
 
 # Get a date object
 today = date.today()
@@ -34,17 +35,20 @@ class dlistedScraper:
     def get_post(self, front_page):
         [s.extract() for s in front_page('script')]
         random_text= front_page.get_text()
-        # break into lines and remove leading and trailing space on each
-        lines = list(line.strip() for line in random_text.splitlines())
-        # break multi-headlines into a line each
-        no_blanks_list = list(filter(None, lines))
-        result = random.sample(no_blanks_list, 5)
-        #only get sentences longer than 100 char
-        sentence_list = list(x for x in result if len(x) > 100)
+        sentence_list = self.clean_html(random_text)
+        #pdb.set_trace()
         if not sentence_list:
             self.get_post(front_page)
         else:
             return sentence_list
 
+    def clean_html(self, random_text):
+        lines = [line.strip() for line in random_text.splitlines()]
+        # break multi-headlines into a line each
+        no_blanks_list = list(filter(None, lines))
+        #pdb.set_trace()
+        result = random.sample(no_blanks_list, 15)
+        #only get sentences longer than 100 char and not the "commenting rule" paragraph
+        return [x for x in result if len(x) > 90 and not re.match('^Our', x)]
 
 

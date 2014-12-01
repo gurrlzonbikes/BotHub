@@ -12,10 +12,8 @@ __author__ = 'Tual'
 class MeBot:
 
     def __init__(self):
-        dlisted = dlistedScraper()
-        yesterday_archive = dlisted.get_yesterday_archives()
-        article = dlisted.get_random_article(yesterday_archive)
-        post = dlisted.get_post(article)
+        self.dlisted = dlistedScraper()
+        comments = self.get_comment_strings()
         pdb.set_trace()
         #credentials_user_name = input("Enter Github username: ")
         #credentials_pwd = getpass("Enter Github password: ")
@@ -38,6 +36,11 @@ class MeBot:
             print(github_wrapper.update_progress(100))
             clone_url = github_wrapper.clone_it(random_rep)
             os_management.clone_repo(clone_url)
+
+    def get_comment_strings(self):
+        yesterday_archive = self.dlisted.get_yesterday_archives()
+        article = self.dlisted.get_random_article(yesterday_archive)
+        return self.dlisted.get_post(article)
 
 
 
