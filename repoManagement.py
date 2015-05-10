@@ -4,7 +4,7 @@ import os
 import re
 import pdb
 import random
-from dlistedScraper import dlistedScraper
+from DlistedScraper import dlistedScraper
 
 class repoManagement:
 
@@ -19,7 +19,6 @@ class repoManagement:
         cfiles = [os.path.join(root, filename)
           for root, dirnames, filenames in os.walk('/Users/Tual/PycharmProjects/'+folder_name.split("/")[1])
           for filename in filenames if filename.endswith('.py') and not re.match('^__init', filename)]
-        #pdb.set_trace()
         return random.choice(cfiles)
 
     def insert_random_in_file(self, file_to_modify):
@@ -29,7 +28,6 @@ class repoManagement:
             random_choice = random.choice(test)
             comment = self.get_comment_strings()
             data.insert(random_choice[0]+1, comment)
-            #pdb.set_trace()
             infile.writelines(data)
             print(file_to_modify + " was just updated at line "+str(random_choice[0]+1))
             infile.close()
@@ -40,7 +38,6 @@ class repoManagement:
         yesterday_archive = self.dlisted.get_yesterday_archives()
         article = self.dlisted.get_random_article(yesterday_archive)
         raw_post = self.dlisted.get_post(article)
-        #pdb.set_trace()
         concat_post_strings = ' '.join(str(items) for items in raw_post)
         return '"""' + concat_post_strings + '"""\n'
 
