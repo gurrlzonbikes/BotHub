@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/BotHub.iml" filepath="$PROJECT_DIR$/.idea/BotHub.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../DisqusScraper/.idea/DisqusScraper.iml" filepath="$PROJECT_DIR$/../DisqusScraper/.idea/DisqusScraper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../boto-boot/.idea/boto-boot.iml" filepath="$PROJECT_DIR$/../boto-boot/.idea/boto-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ratzilla/.idea/ratzilla.iml" filepath="$PROJECT_DIR$/../ratzilla/.idea/ratzilla.iml" />
     </modules>
   </component>
 </project>

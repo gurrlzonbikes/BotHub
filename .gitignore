@@ -36,4 +36,9 @@
 ehthumbs.db
 Thumbs.db
 
-secret
+__pycache__/
+.idea/
+.DS_Store
+utile.txt
+bothub/
+

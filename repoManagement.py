@@ -12,8 +12,6 @@ class repoManagement:
         self.dlisted = dlistedScraper()
 
     def clone_repo(self, repo_url):
-        #subprocess.call('cd ../', shell=True)
-        #subprocess.call(['git clone '+repo_url], shell=True)
         p = subprocess.Popen(['git clone '+repo_url], cwd='/Users/Tual/PycharmProjects', shell=True)
         p.wait()
 
@@ -42,6 +40,7 @@ class repoManagement:
         yesterday_archive = self.dlisted.get_yesterday_archives()
         article = self.dlisted.get_random_article(yesterday_archive)
         raw_post = self.dlisted.get_post(article)
-        concat_post_strings = ' '.join(raw_post)
+        #pdb.set_trace()
+        concat_post_strings = ' '.join(str(items) for items in raw_post)
         return '"""' + concat_post_strings + '"""\n'
 
